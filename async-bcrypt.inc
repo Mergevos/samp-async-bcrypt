@@ -1,8 +1,51 @@
+/*
+	* Library: Samp Async Bcryot (async-bcrypt.inc)
+	* Author: Mergevos
+	* Date: 02. Decembre 2020.
+	* Copyright: (C) 2020
+	* Credits: 
+        IllidanS4 - PawnPlus
+        Graber - Snippets from pp-mysql.inc. 
+*/
+
+/**
+ * <library name="async-bcrypt">
+ * <section>
+ *  Version
+ * </section>
+ *  1.0.0
+ * </library>
+ */
+
+#if defined _inc_async_bcrypt
+    #undef _inc_async_bcrypt
+#endif
+
+#if defined _Async_BCrypt_included_
+    #endinput
+#endif
+#define _Async_BCrypt_included_
+
+#define _ASYNC_BCRYPT_VERSION "1.0.0"
+
+
 #include <a_samp>
 #include <PawnPlus> 
 
 // Currently supported only Lassir's plugin.
 // SyS' plugin support will be released as soon as possible.
+
+forward _pp@on_init@PPAsync_BCrypt();
+public _pp@on_init@PPAsync_BCrypt() {
+    printf("[%s] Async-Bcrypt by Mergevos loaded!", _ASYNC_BCRYPT_VERSION);
+}
+
+forward _pp@on_exit@PPAsync_BCrypt();
+public _pp@on_exit@PPAsync_BCrypt() {
+    printf("[%s] Async-Bcrypt by Mergevos unloaded!", _ASYNC_BCRYPT_VERSION);
+}
+
+
 
 #if defined bcrypt_included
     
