@@ -3,6 +3,7 @@
 	"repo": "samp-async-bcrypt",
 	"entry": "test.pwn",
 	"output": "test.amx",
+	"tag": "1.0.0",
 	"dependencies": [
 		"sampctl/samp-stdlib",
 		"IllidanS4/PawnPlus",
