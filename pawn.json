@@ -6,10 +6,10 @@
 	"tag": "1.0.0",
 	"dependencies": [
 		"sampctl/samp-stdlib",
-		"IllidanS4/PawnPlus",
-		"Mergevos/bcrypt-samp"
+		"IllidanS4/PawnPlus"
 	],
 	"dev_dependencies": [
-		"Mergevos/samp-logging"
+		"Mergevos/samp-logging",
+		"Mergevos/bcrypt-samp"
 	]
 }
